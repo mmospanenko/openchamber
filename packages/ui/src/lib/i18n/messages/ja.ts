@@ -4,6 +4,7 @@ import { linearIssuePickerI18n } from './linear-issue-picker.i18n';
 import { linearPanelI18n } from './linear-panel.i18n';
 import { routingI18n } from './routing.i18n';
 import { pluginPanelI18n } from './plugin-panel.i18n';
+import { surfacePanelI18n } from './surface-panel.i18n';
 
 export const dict: Record<I18nKey, string> = {
   'sessions.aiRename.action': 'AIで名前を変更',
@@ -34,6 +35,7 @@ export const dict: Record<I18nKey, string> = {
   ...linearPanelI18n.ja,
   ...routingI18n.ja,
   ...pluginPanelI18n.ja,
+  ...surfacePanelI18n.ja,
   'terminalView.actions.attachSelection': '選択した出力を添付',
   'terminalView.actions.copySelection': '選択した出力をコピー',
   'terminalView.toast.selectionCopied': '出力をコピーしました',
@@ -1659,8 +1661,6 @@ export const dict: Record<I18nKey, string> = {
   'diffView.actions.renderAnyway': 'とにかくレンダリング',
   'diffView.actions.expandAll': 'すべて展開',
   'diffView.actions.collapseAll': 'すべて折りたたむ',
-  'diffView.actions.loadFullFiles': '全ファイルを読み込む',
-  'diffView.actions.disableFullFiles': '全ファイルの読み込みを解除',
   'diffView.actions.disableLineWrap': '行の折り返しを無効にする',
   'diffView.actions.enableLineWrap': '行の折り返しを有効にする',
   'diffView.actions.openFileInEditorAtChange': '変更箇所でファイルをエディターで開く',
@@ -2335,6 +2335,7 @@ export const dict: Record<I18nKey, string> = {
   'chat.textSelection.title.commentOnSelection': '選択範囲にコメント',
   'chat.textSelection.comment.placeholder': '任意のコメントを追加...',
   'chat.textSelection.comment.attach': '添付',
+  'chat.textSelection.comment.attachFailed': 'コメントを添付できませんでした。コメントを短くするか、他の添付コンテキストを削除してから、もう一度お試しください。',
   'chat.textSelection.actions.addToNotes': 'メモに追加',
   'chat.textSelection.title.addToCurrentChat': '現在のチャットに追加',
   'chat.textSelection.title.saveInsightToNotes': '選択テキストをメモに保存',
@@ -2938,6 +2939,9 @@ export const dict: Record<I18nKey, string> = {
   'desktopHostSwitcher.error.failedToSave': '保存に失敗しました',
   'desktopHostSwitcher.error.failedToLoad': '読み込みに失敗しました',
   'desktopHostSwitcher.error.invalidUrl': '無効なURL（http/httpsである必要があります）',
+  'desktopHostSwitcher.error.pairingRejected': 'ペアリングリンクが無効か、期限切れです。新しいリンクを生成してください。',
+  'desktopHostSwitcher.error.pairingFailed': 'ペアリングに失敗しました（HTTP {status}）。',
+  'desktopHostSwitcher.error.pairingInvalidResponse': 'サーバーが無効なペアリング応答を返しました。',
   'desktopHostSwitcher.error.failedToOpenNewWindow': '新しいウィンドウを開けませんでした',
   'desktopHostSwitcher.instance.local': 'ローカル',
   'desktopHostSwitcher.instance.fallback': 'インスタンス',
@@ -3091,6 +3095,9 @@ export const dict: Record<I18nKey, string> = {
   'onboarding.desktopRecovery.actions.retrying': '再試行中…',
   'onboarding.desktopRecovery.actions.retryConnection': '接続を再試行',
   'startup.initRecovery.title': '起動に失敗しました',
+  'startup.initRecovery.openCodeUnavailable': 'OpenChamberには接続できますが、OpenCodeの準備ができていません。サーバー上のOpenCodeを確認してから再試行してください。',
+  'startup.initRecovery.binary': 'OpenCodeの実行ファイル',
+  'startup.initRecovery.error': 'OpenCodeのエラー',
   'startup.initRecovery.description': 'OpenChamberが初期化を完了できませんでした。サーバーが実行中であることを確認してから再試行してください。',
   'startup.initRecovery.retry': '再試行',
   'startup.initRecovery.retrying': '再試行中…',

@@ -4,6 +4,7 @@ import { linearIssuePickerI18n } from './linear-issue-picker.i18n';
 import { linearPanelI18n } from './linear-panel.i18n';
 import { routingI18n } from './routing.i18n';
 import { pluginPanelI18n } from './plugin-panel.i18n';
+import { surfacePanelI18n } from './surface-panel.i18n';
 
 export const dict: Record<I18nKey, string> = {
   'sessions.aiRename.action': 'Zmień nazwę z AI',
@@ -34,6 +35,7 @@ export const dict: Record<I18nKey, string> = {
   ...linearPanelI18n.pl,
   ...routingI18n.pl,
   ...pluginPanelI18n.pl,
+  ...surfacePanelI18n.pl,
   'terminalView.actions.attachSelection': 'Dołącz zaznaczone dane wyjściowe',
   'terminalView.actions.copySelection': 'Kopiuj zaznaczone dane wyjściowe',
   'terminalView.toast.selectionCopied': 'Skopiowano dane wyjściowe',
@@ -972,6 +974,7 @@ export const dict: Record<I18nKey, string> = {
   'chat.textSelection.title.commentOnSelection': 'Skomentuj zaznaczenie',
   'chat.textSelection.comment.placeholder': 'Dodaj opcjonalny komentarz...',
   'chat.textSelection.comment.attach': 'Załącz',
+  'chat.textSelection.comment.attachFailed': 'Nie udało się załączyć komentarza. Skróć go lub usuń inny załączony kontekst i spróbuj ponownie.',
   'chat.textSelection.actions.addToNotes': 'Dodaj do notatek',
   'chat.textSelection.title.addToCurrentChat': 'Dodaj do obecnego czatu',
   'chat.textSelection.title.saveInsightToNotes': 'Zapisz zaznaczony tekst do notatek',
@@ -1155,6 +1158,9 @@ export const dict: Record<I18nKey, string> = {
   'onboarding.desktopRecovery.actions.retrying': 'Ponawianie...',
   'onboarding.desktopRecovery.actions.retryConnection': 'Ponów połączenie',
   'startup.initRecovery.title': 'Uruchamianie nie powiodło się',
+  'startup.initRecovery.openCodeUnavailable': 'OpenChamber jest dostępny, ale OpenCode nie jest gotowy. Sprawdź OpenCode na serwerze i spróbuj ponownie.',
+  'startup.initRecovery.binary': 'Plik wykonywalny OpenCode',
+  'startup.initRecovery.error': 'Błąd OpenCode',
   'startup.initRecovery.description': 'OpenChamber nie mógł dokończyć inicjalizacji. Sprawdź czy serwer działa, następnie spróbuj ponownie.',
   'startup.initRecovery.retry': 'Ponów',
   'startup.initRecovery.retrying': 'Ponawianie...',
@@ -1821,6 +1827,9 @@ export const dict: Record<I18nKey, string> = {
   'desktopHostSwitcher.error.failedToOpenNewWindow': 'Nie udało się otworzyć nowego okna',
   'desktopHostSwitcher.error.failedToSave': 'Nie udało się zapisać',
   'desktopHostSwitcher.error.invalidUrl': 'Nieprawidłowy URL (musi używać http/https)',
+  'desktopHostSwitcher.error.pairingRejected': 'Link parowania jest nieprawidłowy lub wygasł. Wygeneruj nowy.',
+  'desktopHostSwitcher.error.pairingFailed': 'Parowanie nie powiodło się (HTTP {status}).',
+  'desktopHostSwitcher.error.pairingInvalidResponse': 'Serwer zwrócił nieprawidłową odpowiedź na żądanie parowania.',
   'desktopHostSwitcher.field.labelOptionalPlaceholder': 'Etykieta (opcjonalna)',
   'desktopHostSwitcher.field.labelPlaceholder': 'Etykieta',
   'desktopHostSwitcher.field.urlPlaceholder': 'https://host:port',
@@ -1870,8 +1879,6 @@ export const dict: Record<I18nKey, string> = {
   'diffView.actions.enableLineWrap': 'Włącz zawijanie linii',
   'diffView.actions.expandAll': 'Rozwiń wszystko',
   'diffView.actions.collapseAll': 'Zwiń wszystko',
-  'diffView.actions.loadFullFiles': 'Wczytaj pełne pliki',
-  'diffView.actions.disableFullFiles': 'Nie wczytuj pełnych plików',
   'diffView.actions.openFileAtFirstChangedLine': 'Otwórz plik na pierwszej zmienionej linii',
   'diffView.actions.review': 'Review',
   'diffView.actions.reviewAria': 'Przejrzyj zmiany',

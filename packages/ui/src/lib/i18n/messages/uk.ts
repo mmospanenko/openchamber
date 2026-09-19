@@ -4,6 +4,7 @@ import { linearIssuePickerI18n } from './linear-issue-picker.i18n';
 import { linearPanelI18n } from './linear-panel.i18n';
 import { routingI18n } from './routing.i18n';
 import { pluginPanelI18n } from './plugin-panel.i18n';
+import { surfacePanelI18n } from './surface-panel.i18n';
 
 export const dict: Record<I18nKey, string> = {
   'sessions.aiRename.action': 'Перейменувати за допомогою ШІ',
@@ -34,6 +35,7 @@ export const dict: Record<I18nKey, string> = {
   ...linearPanelI18n.uk,
   ...routingI18n.uk,
   ...pluginPanelI18n.uk,
+  ...surfacePanelI18n.uk,
   'terminalView.actions.attachSelection': 'Прикріпити вибраний вивід',
   'terminalView.actions.copySelection': 'Скопіювати вибраний вивід',
   'terminalView.toast.selectionCopied': 'Вивід скопійовано',
@@ -1629,8 +1631,6 @@ export const dict: Record<I18nKey, string> = {
   "diffView.actions.renderAnyway": "Все одно відрендерити",
   "diffView.actions.expandAll": "Розгорнути все",
   "diffView.actions.collapseAll": "Згорнути все",
-  "diffView.actions.loadFullFiles": "Завантажити повні файли",
-  "diffView.actions.disableFullFiles": "Не завантажувати повні файли",
   "diffView.actions.disableLineWrap": "Вимкнути перенос рядків",
   "diffView.actions.enableLineWrap": "Увімкнути перенос рядків",
   "diffView.actions.openFileInEditorAtChange": "Відкрити цей файл у редакторі на зміні",
@@ -2317,6 +2317,7 @@ export const dict: Record<I18nKey, string> = {
   "chat.textSelection.title.commentOnSelection": "Коментувати виділене",
   "chat.textSelection.comment.placeholder": "Додайте коментар за бажанням...",
   "chat.textSelection.comment.attach": "Прикріпити",
+  "chat.textSelection.comment.attachFailed": "Не вдалося прикріпити коментар. Скоротіть його або приберіть інший прикріплений контекст і спробуйте знову.",
   "chat.textSelection.actions.addToNotes": "Додати до нотаток",
   "chat.textSelection.title.addToCurrentChat": "Додати до поточного чату",
   "chat.textSelection.title.saveInsightToNotes": "Зберегти вибраний текст у нотатках",
@@ -2905,6 +2906,9 @@ export const dict: Record<I18nKey, string> = {
   "desktopHostSwitcher.error.failedToSave": "Не вдалося зберегти",
   "desktopHostSwitcher.error.failedToLoad": "Не вдалося завантажити",
   "desktopHostSwitcher.error.invalidUrl": "Некоректний URL (має бути http/https)",
+  "desktopHostSwitcher.error.pairingRejected": "Посилання для сполучення недійсне або прострочене. Створіть нове.",
+  "desktopHostSwitcher.error.pairingFailed": "Не вдалося виконати сполучення (HTTP {status}).",
+  "desktopHostSwitcher.error.pairingInvalidResponse": "Сервер повернув некоректну відповідь на запит сполучення.",
   "desktopHostSwitcher.error.failedToOpenNewWindow": "Не вдалося відкрити нове вікно",
   "desktopHostSwitcher.instance.local": "Local",
   "desktopHostSwitcher.instance.fallback": "Інстанс",
@@ -3060,6 +3064,9 @@ export const dict: Record<I18nKey, string> = {
   "onboarding.desktopRecovery.actions.retrying": "Повторна спроба…",
   "onboarding.desktopRecovery.actions.retryConnection": "Повторити підключення",
   "startup.initRecovery.title": "Не вдалося запустити",
+  "startup.initRecovery.openCodeUnavailable": "OpenChamber доступний, але OpenCode не готовий. Перевірте OpenCode на сервері й повторіть спробу.",
+  "startup.initRecovery.binary": "Виконуваний файл OpenCode",
+  "startup.initRecovery.error": "Помилка OpenCode",
   "startup.initRecovery.description": "OpenChamber не зміг завершити ініціалізацію. Перевірте, що сервер запущений, і повторіть спробу.",
   "startup.initRecovery.retry": "Повторити спробу",
   "startup.initRecovery.retrying": "Повторна спроба…",

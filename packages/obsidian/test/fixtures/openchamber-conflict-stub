@@ -1,0 +1,17 @@
+#!/bin/sh
+requested=""
+while [ "$#" -gt 0 ]; do
+  if [ "$1" = "--port" ]; then
+    shift
+    requested="$1"
+  fi
+  shift
+done
+
+if [ "$requested" = "4567" ]; then
+  echo "Error: Port 4567 is already in use by another process." >&2
+  exit 1
+fi
+
+echo "OpenChamber server listening on 127.0.0.1:${requested:-4888}"
+sleep 300

@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Starting OpenChamber on port ${OPENCHAMBER_STUB_PORT:-3000} (foreground)"
+echo "OpenChamber server listening on 127.0.0.1:${OPENCHAMBER_STUB_PORT:-3000}"
+sleep 300

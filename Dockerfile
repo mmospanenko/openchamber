@@ -12,6 +12,7 @@ COPY packages/electron/package.json ./packages/electron/
 COPY packages/vscode/package.json ./packages/vscode/
 COPY packages/mobile/package.json ./packages/mobile/
 COPY packages/sdk/package.json ./packages/sdk/
+COPY packages/obsidian/package.json ./packages/obsidian/
 RUN bun install --frozen-lockfile --ignore-scripts
 
 FROM deps AS builder

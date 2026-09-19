@@ -1,0 +1,49 @@
+.openchamber-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--background-primary);
+}
+
+.openchamber-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-4-3);
+  height: 100%;
+  padding: var(--size-4-6);
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.openchamber-loading-indicator {
+  width: var(--size-4-6);
+  height: var(--size-4-6);
+  border: 2px solid var(--background-modifier-border);
+  border-top-color: var(--interactive-accent);
+  border-radius: 50%;
+  animation: openchamber-spin 1s linear infinite;
+}
+
+.openchamber-error {
+  color: var(--text-error);
+}
+
+.openchamber-error-message {
+  max-width: 32em;
+  color: var(--text-normal);
+}
+
+.openchamber-retry {
+  cursor: pointer;
+}
+
+@keyframes openchamber-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

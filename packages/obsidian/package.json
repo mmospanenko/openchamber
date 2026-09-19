@@ -1,0 +1,22 @@
+{
+  "name": "@openchamber/obsidian",
+  "version": "0.1.0",
+  "description": "Obsidian plugin that embeds the OpenChamber UI and manages a local OpenChamber server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit -p tsconfig.json && node esbuild.config.mjs production",
+    "type-check": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint \"./src/**/*.ts\" --config ../../eslint.config.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "esbuild": "^0.28.0",
+    "eslint": "^9.33.0",
+    "obsidian": "^1.13.1",
+    "typescript": "~5.9.0",
+    "vitest": "^4.1.4"
+  }
+}

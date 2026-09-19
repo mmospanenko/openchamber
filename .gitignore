@@ -44,6 +44,7 @@ SECURITY_HARDENING_IMPLEMENTATION_PLAN.md
 packages/web/server/built-in-extensions/
 packages/web/server/built-in-extensions.previous-*/
 packages/web/server/.builtin-build-*/
+packages/obsidian/main.js
 build/
 .gradle/
 .*.bun-build

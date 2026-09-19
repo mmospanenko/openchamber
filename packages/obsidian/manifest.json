@@ -1,0 +1,9 @@
+{
+  "id": "openchamber-ui",
+  "name": "OpenChamber",
+  "version": "0.1.0",
+  "minAppVersion": "1.13.0",
+  "description": "Run OpenChamber agent sessions against your vault in an Obsidian side panel.",
+  "author": "OpenChamber",
+  "isDesktopOnly": true
+}

@@ -3,7 +3,7 @@
   "ignore": [
     "packages/mobile/android/app/src/main/assets/public/**",
     "packages/mobile/ios/App/App/public/**",
-    "packages/sdk/examples/**",
+    "packages/sdk/examples/**"
   ],
   "workspaces": {
     ".": {
@@ -90,6 +90,15 @@
       "project": [
         "*.{js,cjs,mjs,ts}",
         "scripts/**/*.{js,cjs,mjs,ts}"
+      ]
+    },
+    "packages/obsidian": {
+      "entry": [
+        "src/main.ts",
+        "src/**/*.{test,spec}.ts"
+      ],
+      "project": [
+        "src/**/*.ts"
       ]
     }
   }
